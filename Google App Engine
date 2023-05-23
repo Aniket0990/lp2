@@ -1,0 +1,8 @@
+download and install gcloud Cli
+once installed open Cli
+use command >>gcloud init<< to initialize google cloud SDK
+after that install gcloud components using following command
+>>gcloud components install app-engine-java or app-engine-python<<
+to check the list of installed components use following command
+>>gcloud components list<<
+we can also install app engine in projects virtual enviroment using >>pip install google-cloud-appengine<<
