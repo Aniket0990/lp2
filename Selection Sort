@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class selectionsort {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Size of array : ");
+        int size = s.nextInt();
+        int arr[] = new int[size];
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print("Enter No. for " + i + ": ");
+            arr[i] = s.nextInt();
+        }
+        System.out.print("Youer Array is : ");
+        for (int j = 0; j < arr.length; j++) {
+            System.out.print(arr[j] + " ");
+        }
+        System.out.println(" ");
+
+        int temp;
+        for(int k=0;k<arr.length-1;k++){
+            int loc=k;
+            for(int p=k+1; p<arr.length; p++){
+                if(arr[loc]<arr[p]){
+                    loc=p;
+                }
+            }
+            if(loc!=k){
+                temp = arr[loc];
+                arr[loc]=arr[k];
+                arr[k]=temp;
+            }
+        }
+        System.out.print("Youer Sorted Array is : ");
+        for (int z = 0; z < arr.length; z++) {
+            System.out.print(arr[z] + " ");
+        }
+    }
+}
