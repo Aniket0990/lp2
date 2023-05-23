@@ -1,0 +1,14 @@
+go to salesforce.com and login
+clickapp launcher 
+click app manager
+click new lighting app
+provide required information like name logo etc
+deifne ux of the app
+start developing business logic using apex 
+go to setup menu
+goto develper console
+
+create apex class and write Code
+integrate other features like triggers and all if needed
+test application to test performance
+also deploy it.
